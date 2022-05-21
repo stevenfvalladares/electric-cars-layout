@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap');
 
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+
 /*========================================*/
 /*---------[-Colors & font-size]----------*/
 /*========================================*/
@@ -37,6 +40,10 @@ nav {
     padding: 10px;
     grid-area: navbar-section;
     background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 section {
@@ -65,14 +72,19 @@ footer {
     width: 100%;
     min-height: 100vh;
     border: 1px solid var(--dark-jungle);
-    grid-template-rows: 1fr 1fr 8fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr 8fr 1fr;
     grid-template-areas: 
     "navbar-section"
     "filter-section"
     "main-section"
     "footer-section";
-
 }
+
+.nav-left h1 {
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--small);
+} 
 
 
 
