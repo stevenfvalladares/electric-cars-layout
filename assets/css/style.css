@@ -62,7 +62,7 @@ section div h2 {
 }
 
 main {
-    padding: 10px;
+    padding: 25px;
     grid-area: main-section;
 }
 
@@ -95,6 +95,47 @@ footer {
     font-size: var(--small);
 } 
 
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 25px;
+    place-content: center;
+}
+
+.cards-container .product-card:nth-child(n+3) {
+    display: none;
+}
+
+.product-card {
+    width: 300px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 2px;
+}
+
+.product-card img {
+    width: 300px;
+    object-fit: cover;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-details h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--small);
+    color: var(--dark-jungle);
+}
+
+.product-details button {
+    width: 70px;
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+    margin-bottom: 15px;
+}
 
 
 
