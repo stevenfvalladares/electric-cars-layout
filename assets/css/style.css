@@ -37,7 +37,7 @@ body {
 }
 
 nav {
-    padding: 10px;
+    padding: 15px;
     grid-area: navbar-section;
     background-color: var(--blue);
     color: var(--white);
@@ -47,9 +47,18 @@ nav {
 }
 
 section {
-    padding: 10px;
+    padding: 20px;
     grid-area: filter-section;
     background-color: var(--very-light-pink);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--outer-space);
+}
+
+section div h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--medium);
 }
 
 main {
