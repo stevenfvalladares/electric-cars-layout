@@ -28,9 +28,54 @@
 /*-----------------[_Tags]----------------*/
 /*========================================*/
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 10px;
+    grid-area: navbar-section;
+    background-color: var(--blue);
+}
+
+section {
+    padding: 10px;
+    grid-area: filter-section;
+    background-color: var(--very-light-pink);
+}
+
+main {
+    padding: 10px;
+    grid-area: main-section;
+}
+
+footer {
+    padding: 10px;
+    grid-area: footer-section;
+    background-color: var(--blue);
+}
+
 /*========================================*/
 /*---------------- [_Class] --------------*/
 /*========================================*/
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    border: 1px solid var(--dark-jungle);
+    grid-template-rows: 1fr 1fr 8fr 1fr;
+    grid-template-areas: 
+    "navbar-section"
+    "filter-section"
+    "main-section"
+    "footer-section";
+
+}
+
+
+
 
 /*========================================*/
 /*------------- [_breakpoint] ------------*/
