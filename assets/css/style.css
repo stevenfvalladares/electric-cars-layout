@@ -104,7 +104,11 @@ footer div p {
     display: inline;
     font-family: 'Open Sans', sans-serif;
     font-size: var(--small);
-} 
+}
+
+.nav-right ul {
+    display: none;
+}
 
 .cards-container {
     display: grid;
